@@ -1,0 +1,74 @@
+/* ---- Global layout ---- */
+body {
+    background: #f7f7f9;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* ---- Centered container ---- */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* ---- Headings ---- */
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ---- Buttons ---- */
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #4c8bf5;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3a73d8;
+}
+
+button.off {
+    background: #d9534f;
+}
+
+button.off:hover {
+    background: #c2403b;
+}
+
+/* ---- Status badge ---- */
+.status {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.status.on {
+    background: #d7fadc;
+    color: #2d7c33;
+}
+
+.status.off {
+    background: #ffdada;
+    color: #992929;
+}
+
+/* ---- Servo slider ---- */
+input[type="range"] {
+    width: 100%;
+    margin: 20px 0;
+}

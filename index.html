@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Servo & Fan Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="title">Servo & Fan Control</h2>
+
+    <label class="label">
+      Angle: <span id="angleVal">--</span>°
+    </label>
+
+    <input id="angle" type="range" min="0" max="180" value="90" class="slider"/>
+
+    <div class="controls">
+      <button id="setBtn" class="btn">Set Angle</button>
+      <button id="stopBtn" class="btn secondary">Release Servo</button>
+    </div>
+
+    <h3 class="subtitle">Fan</h3>
+
+    <div class="fan-controls">
+      <button id="fanOn" class="btn">Turn Fan ON</button>
+      <button id="fanOff" class="btn secondary">Turn Fan OFF</button>
+      <span id="fanState" class="status"></span>
+    </div>
+
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
